@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>t_ApplyThreshold</class>
+ <widget class="qMRMLWidget" name="t_ApplyThreshold">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>314</width>
+    <height>331</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="pushButton_HelloWorld">
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pushButton_HelloWorld {
+	background-color: none;
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+QPushButton#pushButton_HelloWorld:pressed {
+	background-color: rgb(110, 125, 0);    
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px; 
+}
+QPushButton#pushButton_HelloWorld:hover {
+	background-color: rgb(225, 255, 0);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+
+QPushButton#pushButton_HelloWorld:hover:pressed{
+	background-color: rgb(110, 125, 0);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Say hello by clicking QPushButton</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>qMRMLWidget</class>
+   <extends>QWidget</extends>
+   <header>qMRMLWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
