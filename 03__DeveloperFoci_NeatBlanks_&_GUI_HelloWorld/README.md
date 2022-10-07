@@ -1,4 +1,4 @@
-# <a href="./../" style="text-decoration:none">3D Slicer Extension Tutorial: Step by Step</a>
+# <a href="https://github.com/SenonETS/3DSlicerTutorial_ExtensionModuleDevelopment/" style="text-decoration:none">3D Slicer Extension Tutorial: Step by Step</a>
 
 
 
