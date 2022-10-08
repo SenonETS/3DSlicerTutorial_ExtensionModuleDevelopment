@@ -1,8 +1,13 @@
-# Step-by-step tutorial of 3D Slicer Extension Module Development
-
-## YouTube Video 
-https://www.youtube.com/watch?v=VcqLfAGfE6E&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK
-
+# <a href="https://www.youtube.com/watch?v=VcqLfAGfE6E&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK" style="text-decoration:none">Step-by-step tutorial of 3D Slicer Extension Module Development</a>
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/rr0Q9GUuz7E"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 
 ## <a href="/02__Interact_Debug_&_Pipeline/" style="text-decoration:none">Step 02: Interact, Debug & Pipeline</a>
