@@ -5,14 +5,8 @@
 </br>
 
 ## <a href="./" style="text-decoration:none">Step 02: Interact, Debug & Pipeline</a>
-<iframe
-    width="640"
-    height="480"
-    src="https://www.youtube.com/embed/Gyd-q4NAI7U"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Gyd-q4NAI7U/0.jpg)](https://www.youtube.com/watch?v=Gyd-q4NAI7U&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK)
+
+
 
 <img src="sl_02__Summary.png" alt="isolated" width="1080"/>

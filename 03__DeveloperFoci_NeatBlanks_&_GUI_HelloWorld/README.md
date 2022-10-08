@@ -6,14 +6,8 @@
 
 ## <a href="./" style="text-decoration:none">Step 03: Developer Foci, Neat Blanks & GUI Hello World</a>
 
-<iframe
-    width="640"
-    height="480"
-    src="https://www.youtube.com/embed/tOldfUkSecI"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/tOldfUkSecI/0.jpg)](https://www.youtube.com/watch?v=tOldfUkSecI&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK)
+
+
 
 <img src="sl_03__Summary.png" alt="isolated" width="1080"/>

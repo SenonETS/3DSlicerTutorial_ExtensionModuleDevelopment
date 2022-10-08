@@ -5,14 +5,8 @@
 
 ## <a href="./" style="text-decoration:none">Step 04: Index SequenceBrowser</a>
 
-<iframe
-    width="640"
-    height="480"
-    src="https://www.youtube.com/embed/f_gsm0GJ4_8"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/f_gsm0GJ4_8/0.jpg)](https://www.youtube.com/watch?v=f_gsm0GJ4_8&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK)
+
+
 
 <img src="sl_04__Summary.png" alt="isolated" width="1080"/>

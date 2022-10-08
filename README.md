@@ -1,19 +1,11 @@
 # <a href="https://www.youtube.com/watch?v=VcqLfAGfE6E&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK" style="text-decoration:none">Step-by-step tutorial of 3D Slicer Extension Module Development</a>
-<iframe
-    width="640"
-    height="480"
-    src="https://www.youtube.com/embed/rr0Q9GUuz7E"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/rr0Q9GUuz7E/0.jpg)](https://www.youtube.com/watch?v=rr0Q9GUuz7E&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK)
 
 
 ## <a href="/02__Interact_Debug_&_Pipeline/" style="text-decoration:none">Step 02: Interact, Debug & Pipeline</a>
 
 <img src="/02__Interact_Debug_&_Pipeline/sl_02__Summary.png" alt="isolated" width="800"/>
-
 
 
 ## <a href="./03__DeveloperFoci_NeatBlanks_&_GUI_HelloWorld/" style="text-decoration:none">Step 03: Developer Foci, Neat Blanks & GUI Hello World</a>
