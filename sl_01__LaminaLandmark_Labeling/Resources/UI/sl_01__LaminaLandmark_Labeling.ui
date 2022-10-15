@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sl_01__LaminaLandmark_Labeling</class>
+ <widget class="qMRMLWidget" name="sl_01__LaminaLandmark_Labeling">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_Module">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Lamina Landmark -- Labeling</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_8">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout_SequenceBrowser">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_SequenceBrowser">
+       <property name="text">
+        <string>Sequence browser:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="qMRMLNodeComboBox" name="sequenceSelector">
+       <property name="nodeTypes">
+        <stringlist>
+         <string>vtkMRMLSequenceBrowserNode</string>
+        </stringlist>
+       </property>
+       <property name="showChildNodeTypes">
+        <bool>false</bool>
+       </property>
+       <property name="addEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="removeEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="selectNodeUponCreation">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_FrameSlider">
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_FrameIndex">
+       <property name="text">
+        <string>N/A</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSlider" name="slider_SeqFrame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>99</number>
+       </property>
+       <property name="sliderPosition">
+        <number>50</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelIndicator_Frame">
+       <property name="text">
+        <string>FrameIndex (from 1): </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>16</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="ctkCollapsibleButton" name="landmarkCollapsibleButton">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::WheelFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Laminae Landmarks</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_preFrame">
+        <property name="verticalSpacing">
+         <number>0</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_PreFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Pre_Frame:          </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <layout class="QHBoxLayout" name="h_Layout_preFrame">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QFormLayout" name="formLayout_14">
+            <property name="formAlignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label__Left_IJ__preFrame">
+              <property name="text">
+               <string>Left IJ = </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_Tuple__Left_IJ__preFrame">
+              <property name="text">
+               <string>(N/A,    N/A)</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QFormLayout" name="formLayout_15">
+            <property name="formAlignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label__Right_IJ__preFrame">
+              <property name="text">
+               <string>Right IJ = </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_Tuple__Right_IJ__preFrame">
+              <property name="text">
+               <string>(N/A,    N/A)</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="checkBox_Negative_preFrame">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="text">
+           <string>Negative</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_12">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>4</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_curFrame" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(237, 255, 237);</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_curFrame">
+           <property name="verticalSpacing">
+            <number>0</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_curFrame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Cur_Frame:          </string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <layout class="QHBoxLayout" name="h_Layout_curFrame">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QFormLayout" name="formLayout_8">
+               <property name="formAlignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+               <property name="verticalSpacing">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label__Left_IJ__curFrame">
+                 <property name="text">
+                  <string>Left IJ = </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_Tuple__Left_IJ__curFrame">
+                 <property name="text">
+                  <string>(N/A,    N/A)</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QFormLayout" name="formLayout_9">
+               <property name="formAlignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+               <property name="verticalSpacing">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label__Right_IJ__curFrame">
+                 <property name="text">
+                  <string>Right IJ = </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_Tuple__Right_IJ__curFrame">
+                 <property name="text">
+                  <string>(N/A,    N/A)</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_Negative_curFrame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="tabletTracking">
+              <bool>false</bool>
+             </property>
+             <property name="toolTip">
+              <string>Will remove all existing landmarks!</string>
+             </property>
+             <property name="whatsThis">
+              <string/>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="text">
+              <string>Negative</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>4</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_nextFrame">
+        <property name="verticalSpacing">
+         <number>0</number>
+        </property>
+        <item row="1" column="1">
+         <layout class="QHBoxLayout" name="h_Layout_nextFrame">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QFormLayout" name="formLayout_5">
+            <property name="formAlignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label__Left_IJ__nextFrame">
+              <property name="text">
+               <string>Left IJ = </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_Tuple__Left_IJ__nextFrame">
+              <property name="text">
+               <string>(N/A,    N/A)</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QFormLayout" name="formLayout_4">
+            <property name="formAlignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label__Right_IJ__nextFrame">
+              <property name="text">
+               <string>Right IJ = </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="label_Tuple__Right_IJ__nextFrame">
+              <property name="text">
+               <string>(N/A,    N/A)</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_nextFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>NextFrame:          </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="checkBox_Negative_nextFrame">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="text">
+           <string>Negative</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_3PushButtons_Label">
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton_DropRight">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_DropRight {
+	background-color: none;
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+QPushButton#pushButton_DropRight:pressed {
+	background-color: rgb(110, 125, 0);    
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px; 
+}
+QPushButton#pushButton_DropRight:hover {
+	background-color: rgb(225, 255, 0);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+
+QPushButton#pushButton_DropRight:hover:pressed{
+	background-color: rgb(110, 125, 0);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Drop Right Landmark</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton_DropLeft">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_DropLeft {
+	background-color: none;
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+QPushButton#pushButton_DropLeft:pressed {
+	background-color: rgb(110, 125, 0);    
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px; 
+}
+QPushButton#pushButton_DropLeft:hover {
+	background-color: rgb(225, 255, 0);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+
+QPushButton#pushButton_DropLeft:hover:pressed{
+	background-color: rgb(110, 125, 0);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Drop Left Landmark</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_StartSeqLabeling">
+          <property name="minimumSize">
+           <size>
+            <width>112</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_StartSeqLabeling {
+	background-color: none;
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+QPushButton#pushButton_StartSeqLabeling:pressed {
+	background-color: rgb(110, 125, 0);    
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px; 
+}
+QPushButton#pushButton_StartSeqLabeling:hover {
+	background-color: rgb(225, 255, 0);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+
+QPushButton#pushButton_StartSeqLabeling:hover:pressed{
+	background-color: rgb(110, 125, 0);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Start SequenceLabeling</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>8</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_3PushButtons_Delete">
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton_DeleteRight">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_DeleteRight {
+	background-color: none;
+}
+QPushButton#pushButton_DeleteRight:pressed {
+	background-color: rgb(110, 0, 0);    
+}
+QPushButton#pushButton_DeleteRight:hover {
+	background-color: rgb(225, 0, 0);
+}
+
+QPushButton#pushButton_DeleteRight:hover:pressed{
+	background-color: rgb(110, 0, 0);
+}</string>
+          </property>
+          <property name="text">
+           <string>Delete Right Landmark</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton_DeleteLeft">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_DeleteLeft {
+	background-color: none;
+}
+QPushButton#pushButton_DeleteLeft:pressed {
+	background-color: rgb(110, 0, 0);    
+}
+QPushButton#pushButton_DeleteLeft:hover {
+	background-color: rgb(225, 0, 0);
+}
+
+QPushButton#pushButton_DeleteLeft:hover:pressed{
+	background-color: rgb(110, 0, 0);
+}</string>
+          </property>
+          <property name="text">
+           <string>Delete Left Landmark</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_DeleteFrameLandmark">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_DeleteFrameLandmark {
+	background-color: none;
+}
+QPushButton#pushButton_DeleteFrameLandmark:pressed {
+	background-color: rgb(110, 0, 0);    
+}
+QPushButton#pushButton_DeleteFrameLandmark:hover {
+	background-color: rgb(225, 0, 0);
+}
+
+QPushButton#pushButton_DeleteFrameLandmark:hover:pressed{
+	background-color: rgb(110, 0, 0);
+}</string>
+          </property>
+          <property name="text">
+           <string>Delete Both</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_Output_SeqNumpyLandmarks">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_Output_SeqNumpyLandmarks {
+	background-color: none;
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+QPushButton#pushButton_Output_SeqNumpyLandmarks:pressed {
+	background-color: rgb(71, 110, 155);    
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px; 
+}
+QPushButton#pushButton_Output_SeqNumpyLandmarks:hover {
+	background-color: rgb(91, 155, 213);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+
+QPushButton#pushButton_Output_SeqNumpyLandmarks:hover:pressed{
+	background-color: rgb(71, 110, 155);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Output Numpy Sequence Landmarks</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_Load_SeqNumpyLandmarks">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_Load_SeqNumpyLandmarks {
+	background-color: none;
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+QPushButton#pushButton_Load_SeqNumpyLandmarks:pressed {
+	background-color: rgb(125, 125, 110);    
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px; 
+}
+QPushButton#pushButton_Load_SeqNumpyLandmarks:hover {
+	background-color: rgb(255, 255, 153);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}
+
+QPushButton#pushButton_Load_SeqNumpyLandmarks:hover:pressed{
+	background-color: rgb(125, 125, 110);
+	border-style: outset;
+	border-width: 1.2px;
+	border-radius: 10px;
+	border-color: black;
+	font: bold;
+	min-width: 8em;
+	padding: 3px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Load  Numpy Sequence Landmarks</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ctkCollapsibleButton</class>
+   <extends>QWidget</extends>
+   <header>ctkCollapsibleButton.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>qMRMLNodeComboBox</class>
+   <extends>QWidget</extends>
+   <header>qMRMLNodeComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>qMRMLWidget</class>
+   <extends>QWidget</extends>
+   <header>qMRMLWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sl_01__LaminaLandmark_Labeling</sender>
+   <signal>mrmlSceneChanged(vtkMRMLScene*)</signal>
+   <receiver>sequenceSelector</receiver>
+   <slot>setMRMLScene(vtkMRMLScene*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>439</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_SeqFrame</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>label_FrameIndex</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>45</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
