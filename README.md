@@ -1,4 +1,5 @@
 # <a href="https://www.youtube.com/watch?v=VcqLfAGfE6E&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK" style="text-decoration:none">Step-by-step tutorial of 3D Slicer Extension Module Development</a>
+<img src="/sl_01__LaminaLandmark_Labeling/SL_ScreenShot.png" alt="isolated" width="800"/>
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/rr0Q9GUuz7E/0.jpg)](https://www.youtube.com/watch?v=rr0Q9GUuz7E&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK)
 
