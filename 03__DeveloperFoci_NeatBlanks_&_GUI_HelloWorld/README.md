@@ -8,6 +8,8 @@
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/tOldfUkSecI/0.jpg)](https://www.youtube.com/watch?v=tOldfUkSecI&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK)
 
+#### <a href="https://www.youtube.com/watch?v=tOldfUkSecI&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK" >YouTube Video Tutorial for Step_03</a>
 
+#### <a href="https://www.bilibili.com/video/BV1xK411C7F2/" >Bilibili Video Tutorial for Step_03</a>
 
 <img src="sl_03__Summary.png" alt="isolated" width="1080"/>

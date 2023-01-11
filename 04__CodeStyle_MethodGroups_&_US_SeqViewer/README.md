@@ -8,5 +8,9 @@
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/f_gsm0GJ4_8/0.jpg)](https://www.youtube.com/watch?v=f_gsm0GJ4_8&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK)
 
 
+#### <a href="https://www.youtube.com/watch?v=f_gsm0GJ4_8&list=PLTuWbByD80TORd1R-J7j7nVQ9fot3C2fK">YouTube Video Tutorial for Step_04</a>
+
+#### <a href="https://www.bilibili.com/video/BV1KA411f71N/" >Bilibili Video Tutorial for Step_04</a>
+
 
 <img src="sl_04__Summary.png" alt="isolated" width="1080"/>
